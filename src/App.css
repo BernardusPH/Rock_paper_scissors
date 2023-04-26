@@ -1,0 +1,6 @@
+.main-gameplay-screen {
+  width: clamp(310px, 90%, 800px);
+  display: flex;
+  justify-content: center;
+  
+}

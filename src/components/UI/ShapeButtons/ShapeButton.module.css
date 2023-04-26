@@ -1,0 +1,40 @@
+.shape-btn {
+  all: unset;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 200px;
+  aspect-ratio: 1/1;
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--first-Linear-color)),
+    hsl(var(--last-Linear-color))
+  );
+  border-radius: 50%;
+  box-shadow: 0px 5px 0px 0px hsla(var(--first-Linear-color), 0.8);
+  -webkit-box-shadow: 0px 5px 0px 0px hsla(var(--first-Linear-color), 0.8);
+  -moz-box-shadow: 0px 5px 0px 0px hsla(var(--first-Linear-color), 0.8);
+}
+.btn-White-img-container{
+    width:75%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    
+}
+
+@media (max-width:700px){
+    .shape-btn{
+        width:150px;
+    }
+    .btn-White-img-container{
+        width:78%;
+    }
+}
+@media (max-width:550px){
+    .shape-btn{
+        width:130px;
+    }
+}

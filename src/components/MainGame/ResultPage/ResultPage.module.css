@@ -1,0 +1,35 @@
+.result-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.result-container .black-circle {
+  transform: scale(1.2);
+}
+
+.loading-block-container {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.black-circle {
+  width: 75%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: black;
+}
+@media (max-width: 700px) {
+  .loading-block-container {
+    width: 150px;
+  }
+  .black-circle {
+    width: 78%;
+  }
+}
+@media (max-width: 550px) {
+  .loading-block-container {
+    width: 130px;
+  }
+}
