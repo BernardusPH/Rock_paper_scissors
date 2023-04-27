@@ -1,6 +1,38 @@
 .main-gameplay-screen {
-  width: clamp(310px, 90%, 800px);
+  width: clamp(360px, 95%, 800px);
   display: flex;
   justify-content: center;
-  
+  max-height:430px;
+  margin-top: 1rem;
 }
+
+button{
+  display: block;
+}
+footer{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer>*{
+  position: fixed;
+  bottom: 0;
+
+}
+footer>*:nth-child(1){
+  position: fixed;
+  bottom: 2rem;
+  left:2rem;
+}
+footer>*:nth-child(2){
+  position: fixed;
+  bottom: 2rem;
+ right:2rem;
+}
+
+.profile-link{
+  position: fixed;
+  top: 0;
+  left:0;
+}
+

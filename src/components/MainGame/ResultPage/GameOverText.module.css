@@ -1,0 +1,20 @@
+.game-over-text-container{
+    grid-area: game-text;
+    align-self: center;
+    width:100%;
+}
+.game-over-text-container>*{
+text-align: center;
+margin: auto;
+}
+.game-over-text{
+    font-size:clamp(1.8em, 4.5vw, 3.5em);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media (max-width:700px){
+    .game-over-text{
+        font-size:4em;
+        
+    }
+}

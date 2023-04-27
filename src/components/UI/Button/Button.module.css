@@ -1,0 +1,51 @@
+.game-btn {
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 8px;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-block: 1rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+.game-btn:focus-visible{
+    outline: 4px solid red;
+}
+
+/* Try again */
+.try-again {
+  margin-top: 1rem;
+  width: 80%;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid white;
+
+  color: var(--Dark-Text);
+}
+.try-again:hover,
+.try-again:active {
+  color: white;
+  background: transparent;
+}
+/* /////////// */
+
+.rules,.mode-change {
+background-color: transparent;
+color: white;
+text-transform: uppercase;
+border: 1px solid white;
+outline: none;
+padding-inline: 1rem;
+}
+.rules:hover,.rules:active,.mode-change:hover,.mode-change:active {
+  background-color: white;
+  color: var(--Dark-Text);
+  
+  }
+
+
+
+@media (max-width:700px){
+  
+}
+

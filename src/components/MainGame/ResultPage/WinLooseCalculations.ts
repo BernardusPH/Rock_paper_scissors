@@ -14,8 +14,8 @@ export default function calculation(userThrow:string, aiThrow:string):string{
       if (userThrow === aiThrow) {
         return "Tie";
       } else if (rules[userThrow].beats.includes(aiThrow)) {
-        return "You Win!";
+        return "You win";
       } else {
-        return "You lost!";
+        return "You lose";
       }
 }

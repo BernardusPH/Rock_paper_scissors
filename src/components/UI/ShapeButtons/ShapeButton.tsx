@@ -8,8 +8,10 @@ interface ImageStyle extends CSSProperties {
 }
 interface ShapeButtonProps extends ImgData {
   colorPicked?: (shapeData : ImgData) => void;
-  disabled?:boolean
-  shapeScale:number
+  disabled?:boolean;
+  shapeScale:number;
+  className?:string;
+  winner?:boolean;
 }
 const ShapeButton = ({
   img,
@@ -17,8 +19,10 @@ const ShapeButton = ({
   bgcolorStart,
   bgcolorEnd,
   colorPicked,
+  className,
   disabled,
-  shapeScale
+  shapeScale,
+  winner
 }: ShapeButtonProps) => {
 
   function buttonClickHandle(){
@@ -36,7 +40,7 @@ const ShapeButton = ({
           "--last-Linear-color": bgcolorEnd,
         } as ImageStyle
       }
-      className={classes["shape-btn"]}
+      className={`${classes["shape-btn"]} ${classes[className||""]} ${winner && classes.winner} }`}
       onClick={buttonClickHandle}
     >
       <div className={classes["btn-White-img-container"]}>

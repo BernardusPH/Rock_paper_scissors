@@ -33,17 +33,17 @@ img{
 body ,html{
   overflow-x: hidden;
   min-height: 100vh;
-  min-height: 100dvh;
+ 
 }
 #root{
   min-height: 100vh;
-  min-height: 100dvh;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
   background:linear-gradient(to bottom,var(--Radial-Gradient1),var(--Radial-Gradient2)) ;
   padding: 1rem;
-  gap: 7rem;
+  gap: 5rem;
 }
 
 

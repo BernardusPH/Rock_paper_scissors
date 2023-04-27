@@ -1,11 +1,31 @@
+import Modal from "../../UI/Modal/Modal.tsx";
 
-
-const Rules = () => {
-  return (
-    <button>
-        Rules
-    </button>
-  )
+import Button from "../../UI/Button/Button.tsx";
+import { useState } from "react";
+interface RulesProps {
+  gameModeNormal: boolean;
 }
+const Rules = ({ gameModeNormal }: RulesProps) => {
+  const [showModal, setShowModal] = useState<boolean>(false);
+  console.log(gameModeNormal);
 
-export default Rules
+  function closeModal() {
+    setShowModal(false);
+  }
+  function openModal() {
+    setShowModal(true);
+  }
+
+  return (
+    <>
+      {showModal && (
+        <Modal gameModeNormal={gameModeNormal} onClick={closeModal} />
+      )}
+      <Button onClick={openModal} className="rules">
+        Rules
+      </Button>
+    </>
+  );
+};
+
+export default Rules;
