@@ -2,7 +2,7 @@
   width: clamp(360px, 95%, 800px);
   display: flex;
   justify-content: center;
-  max-height:430px;
+ height:440px;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -11,19 +11,13 @@ button{
   display: block;
 }
 footer{
-  bottom: 2rem;
+ 
+  display: flex;
+  justify-content: space-between;
   width:100%;
 }
-footer>*{
-  position: fixed;
-  bottom: 2rem;
-}
-footer>*:nth-child(1){
-  left:2rem;
-}
-footer>*:nth-child(2){
- right:2rem;
-}
+
+
 
 .profile-link{
   position: fixed;

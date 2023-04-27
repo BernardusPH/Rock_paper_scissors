@@ -1,3 +1,5 @@
+
+
 .shape-btn {
   all: unset;
   cursor: pointer;
@@ -15,6 +17,7 @@
   -webkit-box-shadow: 0px 5px 0px 0px hsla(var(--first-Linear-color), 0.8);
   -moz-box-shadow: 0px 5px 0px 0px hsla(var(--first-Linear-color), 0.8);
 }
+
 .shape-btn:not(:disabled):hover,
 .shape-btn:not(:disabled):focus-visible {
   -webkit-box-shadow:0px 5px 0px 0px hsla(var(--first-Linear-color), 0.8), 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
@@ -64,6 +67,6 @@
 }
 @media (max-width: 550px) {
   .shape-btn {
-    width: 130px;
+    width: 120px;
   }
 }

@@ -55,7 +55,7 @@
 @media (max-width: 700px) {
   .game-mode-normal > button:nth-child(3) {
     
-    left:max(calc( 25% + 5vw),5rem);
+    left:min(calc( 30% + 3vw),20rem);
     
   }
   .game-mode-advanced {

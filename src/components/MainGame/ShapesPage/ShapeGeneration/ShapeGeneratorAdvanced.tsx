@@ -16,6 +16,7 @@ const ShapeGeneratorAdvanced = ({
       colorPicked={colorPicked}
       {...item}
       key={item.name}
+ 
     />
   ));
   return <>{generatedShapes}</>;

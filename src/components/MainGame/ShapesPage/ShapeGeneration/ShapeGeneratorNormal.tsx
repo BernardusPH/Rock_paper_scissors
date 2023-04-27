@@ -11,6 +11,7 @@ const ShapeGeneratorNormal = ({ colorPicked }: ShapeGeneratorNormalProps) => {
       colorPicked={colorPicked}
       {...shape}
       key={shape.name}
+      
     />
   ));
   return <>{generatedShapes}</>;
