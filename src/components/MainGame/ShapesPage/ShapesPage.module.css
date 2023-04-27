@@ -32,7 +32,7 @@
 }
 
 .game-mode-advanced > button:nth-child(1) {
-  top: -4rem;
+  top: -3rem;
   left: 30%;
 
 }
@@ -62,26 +62,26 @@
     background-size: 100% 100%;
   }
   .game-mode-advanced > button:nth-child(1) {
-    top: max(calc(30vw - 16rem), -3rem);
-    left: 35%;
+    top: max(calc(21vw - 10rem), -3rem);
+    left: 34%;
    
    
   }
   .game-mode-advanced > button:nth-child(2) {
     top: max(calc(46vw - 15rem), 4rem);
-    right: -2rem;
+    right: -1.5rem;
   }
   .game-mode-advanced > button:nth-child(3) {
-    bottom: max(calc(20vw - 10rem), -4.9rem);
-    right: max(calc(35vw - 10rem), 0);
+    bottom: max(calc(20vw - 10rem), -4.5rem);
+    right: max(calc(35vw - 10rem), 1rem);
   }
   .game-mode-advanced > button:nth-child(4) {
-    bottom: max(calc(20vw - 10rem), -4.9rem);
-    left:max(calc(35vw - 10rem), 0);
+    bottom: max(calc(20vw - 10rem), -4.5rem);
+    left:max(calc(35vw - 10rem), 1rem);
   }
   .game-mode-advanced > button:nth-child(5) {
     top: max(calc(46vw - 15rem), 4rem);
-    left: -2rem;
+    left: -1.5rem;
   }
 }
 
