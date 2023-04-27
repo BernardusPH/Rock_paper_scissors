@@ -32,10 +32,11 @@
 .rules,.mode-change {
 background-color: transparent;
 color: white;
+
 text-transform: uppercase;
 border: 1px solid white;
 outline: none;
-padding-inline: 1rem;
+padding-inline: 1.5rem;
 }
 .rules:hover,.rules:active,.mode-change:hover,.mode-change:active {
   background-color: white;
