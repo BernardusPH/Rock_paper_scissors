@@ -4,6 +4,7 @@
   justify-content: center;
   max-height:430px;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 button{
@@ -29,14 +30,5 @@ footer>*:nth-child(2){
   top: 0;
   left:0;
 }
-@media(max-width:600px){
-  footer{
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  footer>*{
-    position: static;
-  }
-}
+
 
