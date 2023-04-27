@@ -52,7 +52,7 @@
 @media (max-width: 700px) {
   .result-container {
 
-    grid-template-rows:  1fr 7rem 5rem;
+    grid-template-rows:  1fr 7rem 1fr;
     grid-template-areas:
       "your-pick  your-pick  house-pick house-pick"
       "your-pick-heading your-pick-heading  house-pick-heading house-pick-heading"
