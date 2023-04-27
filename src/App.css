@@ -6,7 +6,11 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
+@media (max-width:600px){
+  .main-gameplay-screen{
+    height: 400px;
+  }
+}
 button{
   display: block;
 }

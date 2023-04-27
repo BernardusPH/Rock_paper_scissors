@@ -20,12 +20,15 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   white-space: nowrap;
+  color: white;
 }
 .your-pick-heading {
   grid-area: your-pick-heading;
+  
 }
 .house-pick-heading {
   grid-area: house-pick-heading;
+
 }
 
 .result-container .black-circle {
