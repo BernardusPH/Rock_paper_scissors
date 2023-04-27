@@ -10,23 +10,17 @@ button{
   display: block;
 }
 footer{
+  bottom: 2rem;
   width:100%;
-  display: flex;
-  justify-content: space-between;
 }
 footer>*{
   position: fixed;
-  bottom: 0;
-
+  bottom: 2rem;
 }
 footer>*:nth-child(1){
-  position: fixed;
-  bottom: 2rem;
   left:2rem;
 }
 footer>*:nth-child(2){
-  position: fixed;
-  bottom: 2rem;
  right:2rem;
 }
 
@@ -34,5 +28,15 @@ footer>*:nth-child(2){
   position: fixed;
   top: 0;
   left:0;
+}
+@media(max-width:600px){
+  footer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer>*{
+    position: static;
+  }
 }
 

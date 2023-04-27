@@ -44,7 +44,7 @@ const ShapeButton = ({
       onClick={buttonClickHandle}
     >
       <div className={classes["btn-White-img-container"]}>
-        <img style={{transform:`scale( 1.2)`}} className={classes.shape} src={img} alt={name} />
+        <img style={{transform:`scale( 1.1)`}} className={classes.shape} src={img} alt={name} />
       </div>
     </motion.button>
   );
