@@ -7,7 +7,7 @@ interface RulesProps {
 }
 const Rules = ({ gameModeNormal }: RulesProps) => {
   const [showModal, setShowModal] = useState<boolean>(false);
-  console.log(gameModeNormal);
+  
 
   function closeModal() {
     setShowModal(false);

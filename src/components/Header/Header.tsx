@@ -11,7 +11,7 @@ interface HeaderProps{
 
 
 const Header = ({gameModeNormal,score}:HeaderProps) => {
-  console.log("hello");
+ 
   
     const currentLogo:string=gameModeNormal?NormalLogo:AdvancedLogo;
   return (
