@@ -15,6 +15,7 @@ const Backdrop = ( {onClick}:CloseInter) => {
 }
 interface ModalProps extends CloseInter{
     gameModeNormal:boolean
+ 
 }
 const Modal =({onClick,gameModeNormal}:ModalProps)=>{
     const gameRulesImg:string=gameModeNormal?NormalGameRules:AdvancedGameRules;
@@ -22,7 +23,7 @@ const Modal =({onClick,gameModeNormal}:ModalProps)=>{
     
 
     return (
-        <motion.div initial={{scale:0,translateX:"-50%" }} animate={{scale:1}} className={classes["modal-container"]}>
+        <motion.div initial={{scale:0,translateX:"-50%",translateY:"-50%" }} animate={{scale:1}} className={classes["modal-container"]}>
             <button className={classes["close-modal-button"]} onClick={onClick} ><img src={CloseButton} alt="close button"/> </button>
             <h2  className={classes["modal-heading"]}>Rules</h2>
             <img src={gameRulesImg} alt="Game rules"  className={classes["rule-img"]}  />
@@ -31,7 +32,7 @@ const Modal =({onClick,gameModeNormal}:ModalProps)=>{
     )
 }
 
-const myModal = ({ onClick, gameModeNormal }: ModalProps) => {
+const myModal = ({ onClick, gameModeNormal}: ModalProps) => {
     const modalRoot = document.querySelector("#modal");
     if (!modalRoot) {
       return null; // Return null if the element with id "modal" does not exist
@@ -39,7 +40,7 @@ const myModal = ({ onClick, gameModeNormal }: ModalProps) => {
     return (
         <>
         {ReactDOM.createPortal(<Backdrop onClick={onClick} />, modalRoot)}
-        {ReactDOM.createPortal(<Modal gameModeNormal={gameModeNormal} onClick={onClick} />, modalRoot)}
+        {ReactDOM.createPortal(<Modal  gameModeNormal={gameModeNormal} onClick={onClick} />, modalRoot)}
         </>
     );
   };
