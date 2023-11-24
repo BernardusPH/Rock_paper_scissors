@@ -1,8 +1,5 @@
 :root {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-
- 
-
+  font-family: "Barlow Semi Condensed", sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,39 +9,42 @@
 
   /* ### Neutral */
 
---Dark-Text: hsl(229, 25%, 31%);
---Score-Text: hsl(229, 64%, 46%);
---Header-Outline: hsl(217, 16%, 45%);
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Score-Text: hsl(229, 64%, 46%);
+  --Header-Outline: hsl(217, 16%, 45%);
 
-/* ### Background */
+  /* ### Background */
 
---Radial-Gradient1: hsl(214, 47%, 23%) ;
---Radial-Gradient2:  hsl(237, 49%, 15%);
+  --Radial-Gradient1: hsl(214, 47%, 23%);
+  --Radial-Gradient2: hsl(237, 49%, 15%);
 }
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-img{
+img {
   display: block;
 }
-body ,html{
+body,
+html {
   overflow-x: hidden;
   min-height: 100vh;
   min-height: 100dvh;
- 
 }
-#root{
+#root {
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background:linear-gradient(to bottom,var(--Radial-Gradient1),var(--Radial-Gradient2)) ;
-  padding: 1rem;
+  background: linear-gradient(
+    to bottom,
+    var(--Radial-Gradient1),
+    var(--Radial-Gradient2)
+  );
+  padding: 3rem 1rem 1rem 1rem;
 }
-
-
-

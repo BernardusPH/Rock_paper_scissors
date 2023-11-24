@@ -2,37 +2,32 @@
   width: clamp(360px, 95%, 800px);
   display: flex;
   justify-content: center;
-  height:480px;
+  height: 480px;
   margin-top: 5rem;
-
 }
 
-button{
+button {
   display: block;
 }
-footer{
- 
+footer {
   display: flex;
   justify-content: space-between;
-  width:100%;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
-
-.profile-link{
-  position: fixed;
+.profile-link {
+  position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   color: white;
 }
-.profile-link a{
+.profile-link a {
   color: aqua;
 }
 
-@media (min-width:600px){
-  .main-gameplay-screen{
+@media (min-width: 600px) {
+  .main-gameplay-screen {
     margin-bottom: 3rem;
   }
 }
-
-
